@@ -13,25 +13,24 @@ const Home = () => {
   }, [])
 
   const movies = useSelector(state => state.movies)
-
+  // movies.movies.map(m => console.log(m))
   return (
     <div>
       <Flex style={{ overflowY: "hidden", hight: "70%" }}>
         {
-          movies.movies
-            .map((res) => {
-              if (typeof res !== 'undefined') {
-                return (
-                  <WrapItem key={res.id}>
-                    <MovieCard
-                      key={res.id}
-                      movie={res}
-                      width={400}
-                      height={700} />
-                  </WrapItem>
-                )
-              }
-            })
+          movies.movies.map((res) => {
+            if (typeof res !== 'undefined') {
+              return (
+                <WrapItem key={res.id}>
+                  <MovieCard
+                    key={res.id}
+                    movie={res}
+                    width={400}
+                    height={700} />
+                </WrapItem>
+              )
+            }
+          })
         }
       </Flex>
 
