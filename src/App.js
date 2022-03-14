@@ -9,7 +9,6 @@ function App() {
       <header>
         <Link to="/">Home</Link>
       </header>
-
       <Routes>
         <Route exact path="/" element={<Home />} />
       </Routes>
