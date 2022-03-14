@@ -32,7 +32,7 @@ const Home = () => {
           //       </WrapItem>
           //     )
           //   }
-        })
+          // })
         }
       </Flex>
     </div>);
