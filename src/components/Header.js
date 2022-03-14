@@ -9,17 +9,14 @@ const Header = () => {
   return (
     <Flex>
       <Flex align="center" mr={5}>
-
         <Heading as="h1" size="lg" letterSpacing={"tighter"}>
           MovieDB
-           </Heading>
-
+        </Heading>
       </Flex>
 
       <Box >
         <Link className="header-fav-box-link" to="/">
           <Text style={{ marginRight: "0.7rem" }}>Favourite </Text>
-
         </Link>
       </Box>
     </Flex>

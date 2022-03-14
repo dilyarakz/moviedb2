@@ -1,4 +1,4 @@
-import { GET_MOVIE } from "../actions/types";
+import { GET_MOVIES } from "../actions/types";
 
 
 const initialState = {};
@@ -6,7 +6,7 @@ const initialState = {};
 
 export default function getMoviesReducer(state = initialState, action) {
   switch (action.type) {
-    case GET_MOVIE:
+    case GET_MOVIES:
       return {
         ...state,
         movie: action.payload

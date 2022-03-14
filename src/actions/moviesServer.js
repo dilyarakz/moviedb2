@@ -1,5 +1,5 @@
 import axios from "axios";
-export { GET_MOVIES } from "./types"
+import { GET_MOVIES } from "./types"
 
 
 const API_KEY = process.env.REACT_APP_API_KEY;
