@@ -1,14 +1,14 @@
 import './App.css';
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Home from "./components/Home"
+import Header from './components/Header';
+
 
 
 function App() {
   return (
     <div className="App">
-      <header>
-        <Link to="/">Home</Link>
-      </header>
+      <Header />
       <Routes>
         <Route exact path="/" element={<Home />} />
       </Routes>

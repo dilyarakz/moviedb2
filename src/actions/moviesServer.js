@@ -2,11 +2,6 @@ import axios from "axios";
 export { GET_MOVIES } from "./types"
 
 
-import {
-  GET_MOVIES
-} from "./types";
-
-
 const API_KEY = process.env.REACT_APP_API_KEY;
 const API_LINK = "https://api.themoviedb.org/3/";
 
