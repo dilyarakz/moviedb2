@@ -10,7 +10,9 @@ import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.render(
   <BrowserRouter>
-    <App />
+    <ChakraProvider>
+      <App />
+    </ChakraProvider>
   </BrowserRouter>,
   document.getElementById('root')
 );
