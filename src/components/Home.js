@@ -42,7 +42,4 @@ Home.propTypes = {
 
 
 
-export default connect(
-  null,
-  { getMovies }
-)(Home);
+export default Home;
