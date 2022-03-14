@@ -9,8 +9,9 @@ function App() {
       <header>
         <Link to="/">Home</Link>
       </header>
+
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route exact path="/" element={<Home />} />
       </Routes>
     </div>
   );
