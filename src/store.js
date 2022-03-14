@@ -15,9 +15,9 @@ const store = createStore(
 
 
 
-// store.subscribe(() => {
-// localStorage.setItem('fmovie', JSON.stringify(store.getState().fmovies))
-// console.log(store.getState())
-// })
+store.subscribe(() => {
+  // localStorage.setItem('fmovie', JSON.stringify(store.getState().fmovies))
+  console.log(store.getState())
+})
 
 export default store;
