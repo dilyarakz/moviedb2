@@ -11,7 +11,7 @@ import { Box } from '@chakra-ui/react'
 const MovieCard = (props) => {
 
   return (
-    <Box id="movieCard" m={2} borderRadius='lg' h={props.height} w={props.width}>
+    <Box>
       Card
     </Box>
 

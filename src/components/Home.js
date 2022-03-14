@@ -7,7 +7,7 @@ const Home = () => {
 
   return (
     <div>
-      <Flex style={{ overflowY: "hidden", hight: "70%" }}>
+      <Flex>
 
       </Flex>
     </div>);
