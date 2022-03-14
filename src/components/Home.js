@@ -2,23 +2,26 @@ import React, { useEffect, useState } from 'react';
 import { Flex, WrapItem } from '@chakra-ui/react'
 import MovieCard from "./MovieCard";
 import PropTypes from 'prop-types';
-import { connect } from "react-redux";
+import { connect, useSelector, useDispatch } from "react-redux";
 import { getMovies } from '../actions/moviesServer';
 
+const Home = () => {
 
-const Home = (props) => {
 
-  const [movieData, setMovies] = useState([]);
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    props.getMovies().then(m => setMovies(m))
+    dispatch(getMovies());
   }, [])
+
+  const movies = useSelector(state => state.movies)
+  console.log(movies)
 
   return (
     <div>
       <Flex style={{ overflowY: "hidden", hight: "70%" }}>
         {
-          movieData
+          movies.movies
             .map((res) => {
               if (typeof res !== 'undefined') {
                 return (
