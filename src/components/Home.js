@@ -13,7 +13,8 @@ const Home = () => {
   }, [])
 
   const movies = useSelector(state => state.movies)
-  // movies.movies.map(m => console.log(m))
+  movies.movies.map(m => console.log(m))
+  console.log(movies)
   return (
     <div>
       <Flex style={{ overflowY: "hidden", hight: "70%" }}>
@@ -36,9 +37,7 @@ const Home = () => {
     </div>);
 }
 
-Home.propTypes = {
-  getMovies: PropTypes.func.isRequired,
-}
+
 
 
 
