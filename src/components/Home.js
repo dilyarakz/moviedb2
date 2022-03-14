@@ -33,14 +33,11 @@ const Home = () => {
           })
         }
       </Flex>
-
     </div>);
 }
 
 Home.propTypes = {
-
   getMovies: PropTypes.func.isRequired,
-
 }
 
 
