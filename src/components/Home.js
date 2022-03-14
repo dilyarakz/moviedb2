@@ -7,15 +7,12 @@ import { getMovies } from '../actions/moviesServer';
 
 const Home = () => {
 
-
   const dispatch = useDispatch();
-
   useEffect(() => {
     dispatch(getMovies());
   }, [])
 
   const movies = useSelector(state => state.movies)
-  console.log(movies)
 
   return (
     <div>
